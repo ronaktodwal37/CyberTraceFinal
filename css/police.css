@@ -1,0 +1,3 @@
+/* Police workspace: dense intelligence surfaces optimised for desktop review. */
+body[data-role="police"] { --workspace-accent: var(--gold); }
+body[data-role="police"] .sidebar a.active { box-shadow: inset 2px 0 var(--gold); background: rgba(214,180,106,.08); }

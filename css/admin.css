@@ -1,0 +1,3 @@
+/* Administration workspace keeps operational controls visually distinct. */
+body[data-role="admin"] { --workspace-accent: var(--green); }
+body[data-role="admin"] .sidebar a.active { box-shadow: inset 2px 0 var(--green); background: rgba(40,199,139,.08); }
