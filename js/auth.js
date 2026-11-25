@@ -8,7 +8,7 @@ export function session() {
 }
 
 export function login(email, password, role, remember = false) {
-  // const user = get('users', []).find(item => item.email.toLowerCase() === email.toLowerCase() && item.password === password && item.role === role);
+  const user = get('users', []).find(item => item.email.toLowerCase() === email.toLowerCase() && item.password === password && item.role === role);
   // if (!user) return { ok:false, message:'The credentials do not match the selected role.' };
   // if (!user.active) return { ok:false, message:'This demonstration account is inactive.' };
   // const safe = { id:user.id, name:user.name, email:user.email, role:user.role, district:user.district };
