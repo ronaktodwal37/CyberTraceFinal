@@ -2,10 +2,10 @@ import { get, set, remove, addActivity, url } from './storage.js';
 
 // const SESSION_KEY = 'cybertrace_session';
 
-export function session() {
+// export function session() {
   // try { return JSON.parse(sessionStorage.getItem(SESSION_KEY)) || get('remembered_session'); }
   // catch { return null; }
-}
+// }
 
 export function login(email, password, role, remember = false) {
   const user = get('users', []).find(item => item.email.toLowerCase() === email.toLowerCase() && item.password === password && item.role === role);
