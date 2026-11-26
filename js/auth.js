@@ -15,7 +15,7 @@ export function login(email, password, role, remember = false) {
   sessionStorage.setItem(SESSION_KEY, JSON.stringify(safe));
   if (remember) set('remembered_session', safe); else remove('remembered_session');
   addActivity('Login', `${safe.role} account signed in`);
-  // return { ok:true, user:safe };
+  return { ok:true, user:safe };
 }
 
 export function logout() {
