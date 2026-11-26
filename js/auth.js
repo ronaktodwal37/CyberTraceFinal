@@ -1,6 +1,6 @@
 import { get, set, remove, addActivity, url } from './storage.js';
 
-// const SESSION_KEY = 'cybertrace_session';
+const SESSION_KEY = 'cybertrace_session';
 
 // export function session() {
   // try { return JSON.parse(sessionStorage.getItem(SESSION_KEY)) || get('remembered_session'); }
