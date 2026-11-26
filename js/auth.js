@@ -4,7 +4,7 @@ const SESSION_KEY = 'cybertrace_session';
 
 export function session() {
   try { return JSON.parse(sessionStorage.getItem(SESSION_KEY)) || get('remembered_session'); }
-  // catch { return null; }
+  catch { return null; }
 }
 
 export function login(email, password, role, remember = false) {
